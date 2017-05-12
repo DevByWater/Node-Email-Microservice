@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>Email Dispatcher</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Send Email</h1>
-    <form action="/api/send" method="post">
-      <div>
-         <input type="text" name="recipient" placeholder="Recipient">
-      </div>
+    <div class="container col-sm-3 col-sm-offset-3">
+        <h1>Send Email</h1>
+        <form action="/api/send" method="post">
+          <div>
+            <input type="text" name="recipient" placeholder="Recipient">
+          </div>
 
-      <div>
-         <input type="text" name="subject" placeholder="Subject">
-      </div>
+          <div>
+            <input type="text" name="subject" placeholder="Subject">
+          </div>
 
-      <div>
-         <textarea type="text" name="content" placeholder="Message"></textarea>
+          <div>
+            <textarea type="text" name="content" placeholder="Message"></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        
+        </form>
       </div>
+    
 
       
 
-      <div>
-         <button type="submit">Send</button>
-      </div>
      
-    </form>
   </body>
 </html>
