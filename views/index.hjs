@@ -5,7 +5,26 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <h1>Send Email</h1>
+    <form action="/api/send" method="post">
+      <div>
+         <input type="text" name="recipient" placeholder="Recipient">
+      </div>
+
+      <div>
+         <input type="text" name="subject" placeholder="Subject">
+      </div>
+
+      <div>
+         <textarea type="text" name="content" placeholder="Message"></textarea>
+      </div>
+
+      
+
+      <div>
+         <button type="submit">Send</button>
+      </div>
+     
+    </form>
   </body>
 </html>
