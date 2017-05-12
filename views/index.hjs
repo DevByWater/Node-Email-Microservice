@@ -9,18 +9,18 @@
     <div class="container col-sm-3 col-sm-offset-3">
         <h1>Send Email</h1>
         <form action="/api/send" method="post">
-          <div>
-            <input type="text" name="recipient" placeholder="Recipient">
+          <div class="form-group">
+            <input type="text" name="recipient" placeholder="Recipient" class="form-control">
           </div>
 
-          <div>
-            <input type="text" name="subject" placeholder="Subject">
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" class="form-control">
           </div>
 
-          <div>
-            <textarea type="text" name="content" placeholder="Message"></textarea>
+          <div class="form-group">
+            <textarea type="text" name="content" placeholder="Message" class="form-control"></textarea>
           </div>
-          <div>
+          <div class="form-group">
             <button type="submit">Send</button>
           </div>
         
